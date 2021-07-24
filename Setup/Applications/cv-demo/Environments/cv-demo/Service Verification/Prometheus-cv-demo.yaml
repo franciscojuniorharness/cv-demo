@@ -4,7 +4,8 @@ alertEnabled: false
 alertThreshold: 0.5
 analysisTolerance: LOW
 connectorName: Prometheus-cv-demo
-enabled24x7: true
+enabled24x7: false
+numOfOccurrencesForAlert: 1
 serviceName: cv-demo
 timeSeriesList:
 - metricName: error_call

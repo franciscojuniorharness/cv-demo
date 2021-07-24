@@ -8,6 +8,14 @@ failureStrategies:
   - APPLICATION_ERROR
   repairActionCode: ROLLBACK_WORKFLOW
   retryCount: 0
+notificationRules:
+- conditions:
+  - FAILED
+  executionScope: WORKFLOW
+  notificationGroupAsExpression: false
+  userGroupAsExpression: false
+  userGroupNames:
+  - Account Administrator
 phases:
 - type: KUBERNETES
   computeProviderName: cv-demo
@@ -114,7 +122,7 @@ phases:
       properties:
         approvalStateType: USER_GROUP
         timeoutMillis: 3600000
-        userGroups: null
+        userGroupNames: null
     stepsInParallel: false
   - type: K8S_PHASE_STEP
     name: Wrap Up
