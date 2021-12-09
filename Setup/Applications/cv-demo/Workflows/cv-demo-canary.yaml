@@ -64,6 +64,7 @@ phases:
         analysisTolerance: LOW
         comparisonStrategy: COMPARE_WITH_CURRENT
         customThresholdRefId: 0034526e5f2a4a3ea97011a559dda999
+        metric-thresholds: []
         templateUuid: null
         templateVariables: null
         templateVersion: null
@@ -116,6 +117,7 @@ phases:
         customThresholdRefId: 2f0391c47265474aac8dd39c9a49f096
         executeWithPreviousSteps: true
         includePreviousPhaseNodes: false
+        metric-thresholds: []
         timeDuration: '10'
     - type: APPROVAL
       name: Approval
