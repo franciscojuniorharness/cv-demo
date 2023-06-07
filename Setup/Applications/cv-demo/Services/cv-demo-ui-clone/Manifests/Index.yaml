@@ -3,6 +3,7 @@ type: APPLICATION_MANIFEST
 gitFileConfig:
   branch: master
   connectorName: kubernetes-apim
+  filePath: simple/am-single
   useBranch: true
   useInlineServiceDefinition: false
 storeType: Remote
